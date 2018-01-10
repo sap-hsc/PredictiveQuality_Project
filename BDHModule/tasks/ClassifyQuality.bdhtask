@@ -1,0 +1,14 @@
+{
+  "description": "",
+  "type": "VORA_PIPELINE",
+  "details": {
+    "voraPipeline": {
+      "id": "callHanaClassifyNew",
+      "permanent": false,
+      "parameterValues": []
+    }
+  },
+  "destinationRef": {
+    "id": "Dest_TADH_SolutionPipeline_DEFAULT"
+  }
+}

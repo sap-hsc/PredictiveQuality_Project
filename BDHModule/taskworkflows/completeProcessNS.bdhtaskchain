@@ -1,0 +1,70 @@
+{
+  "taskList": {
+    "1": {
+      "inline": {
+        "type": "START",
+        "taskGroup": "com.sap.dwf.toe.executionControl"
+      }
+    },
+    "2": {
+      "taskRef": {
+        "id": "triggeringPipe"
+      },
+      "preconditions": [
+        {
+          "from": "1",
+          "status": "NEUTRAL"
+        }
+      ]
+    },
+    "3": {
+      "taskRef": {
+        "id": "ImageProcessingPipeline"
+      },
+      "preconditions": [
+        {
+          "from": "2",
+          "status": "OK"
+        }
+      ]
+    },
+    "4": {
+      "inline": {
+        "type": "SYNC",
+        "taskGroup": "com.sap.dwf.toe.executionControl"
+      },
+      "preconditions": [
+        {
+          "from": "3",
+          "status": "OK"
+        },
+        {
+          "from": "6",
+          "status": "OK"
+        }
+      ]
+    },
+    "5": {
+      "taskRef": {
+        "id": "HANALive"
+      },
+      "preconditions": [
+        {
+          "from": "4",
+          "status": "NEUTRAL"
+        }
+      ]
+    },
+    "6": {
+      "taskRef": {
+        "id": "StreamSensorData"
+      },
+      "preconditions": [
+        {
+          "from": "2",
+          "status": "OK"
+        }
+      ]
+    }
+  }
+}
