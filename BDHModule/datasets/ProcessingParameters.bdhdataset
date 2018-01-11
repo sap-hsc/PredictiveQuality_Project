@@ -1,0 +1,78 @@
+{
+  "description": "",
+  "url": "hanadb:///3_HANA_HADOOP_IMAGEPROCESSING/PROCESS_PARAMETERS",
+  "metadata": {
+    "format": "TABLE",
+    "columns": [
+      {
+        "name": "MATERIAL_ID",
+        "datatype": "CHARACTER",
+        "originalDatatype": "NVARCHAR",
+        "length": 10
+      },
+      {
+        "name": "HEAT1",
+        "datatype": "NUMERIC",
+        "originalDatatype": "INTEGER"
+      },
+      {
+        "name": "HEAT2",
+        "datatype": "NUMERIC",
+        "originalDatatype": "INTEGER"
+      },
+      {
+        "name": "PRESSMAX",
+        "datatype": "NUMERIC",
+        "originalDatatype": "INTEGER"
+      },
+      {
+        "name": "PRESSDUR",
+        "datatype": "NUMERIC",
+        "originalDatatype": "INTEGER"
+      },
+      {
+        "name": "RAND_VAL1",
+        "datatype": "NUMERIC",
+        "originalDatatype": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "RAND_VAL2",
+        "datatype": "NUMERIC",
+        "originalDatatype": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "RAND_VAL3",
+        "datatype": "NUMERIC",
+        "originalDatatype": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "RAND_VAL4",
+        "datatype": "NUMERIC",
+        "originalDatatype": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "RAND_VAL5",
+        "datatype": "NUMERIC",
+        "originalDatatype": "DOUBLE",
+        "length": 15
+      },
+      {
+        "name": "RAND_VAL6",
+        "datatype": "NUMERIC",
+        "originalDatatype": "DOUBLE",
+        "length": 15
+      }
+    ],
+    "parameters": [],
+    "parameterValues": {
+      "selectOptions": []
+    }
+  },
+  "destinationRef": {
+    "id": "Dest_TADH_SolutionHANA_SQL"
+  }
+}
